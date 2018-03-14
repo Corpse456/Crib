@@ -10,10 +10,8 @@ import java.util.regex.Pattern;
  * сократить размер кода.
  *
  */
-public class RegEx
-{
-    public static void main(String[] args)
-    {
+public class RegEx {
+    public static void main (String[] args) {
         System.out.println("Cool check:");
 
         System.out.println(checkWithRegExp("_@BEST"));
@@ -33,8 +31,7 @@ public class RegEx
      * Проверка с использования регулярных выражений
      * 
      */
-    public static boolean checkWithRegExp(String userNameString)
-    {
+    public static boolean checkWithRegExp (String userNameString) {
         Pattern p = Pattern.compile("^[a-z0-9_-]{3,15}$");
         Matcher m = p.matcher(userNameString);
         return m.matches();
@@ -43,19 +40,15 @@ public class RegEx
     /**
      * Проверка алгоритмом
      */
-    public static boolean dumbCheck(String userNameString)
-    {
+    public static boolean dumbCheck (String userNameString) {
 
         char[] symbols = userNameString.toCharArray();
-        if (symbols.length < 3 || symbols.length > 15)
-            return false;
+        if (symbols.length < 3 || symbols.length > 15) return false;
 
         String validationString = "abcdefghijklmnopqrstuvwxyz0123456789_";
 
-        for (char c : symbols)
-        {
-            if (validationString.indexOf(c) == -1)
-                return false;
+        for (char c : symbols) {
+            if (validationString.indexOf(c) == -1) return false;
         }
         return true;
     }
