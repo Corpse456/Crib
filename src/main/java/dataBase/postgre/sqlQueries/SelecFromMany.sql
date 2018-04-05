@@ -1,0 +1,1 @@
+((t_book JOIN ON author_id) JOIN ON t_users) WHERE author_name = 'Пелевин' SELECT title

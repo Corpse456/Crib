@@ -1,0 +1,1 @@
+Select * from (select * from t_user; where sex= 'M'  where second_sex = "F"
