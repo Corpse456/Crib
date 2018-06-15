@@ -25,16 +25,16 @@ public class Selection {
     }
 
     private static void sort () {
-        for (int j = 0; j < array.length - 1; j++) {
-            int min = j;
-            for (int i = j + 1; i < array.length; i++) {
-                if (array[i] < array[min]) {
-                    min = i;
+        for (int i = 0; i < array.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[j] < array[min]) {
+                    min = j;
                 }
             }
             // если j-ый элемент и так миимальный
-            if (min != j) {
-                swap(min, j, array);
+            if (min != i) {
+                swap(min, i, array);
             }
         }
     }
