@@ -1,0 +1,1 @@
+select * FROM INFORMATION_SCHEMA.COLUMNS where COLUMN_TYPE like 'enum%COPY_PROP%' \G;
