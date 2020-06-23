@@ -3,4 +3,4 @@ delete a from MDS_AMENITY_CHAR_FREE_TEXT_RESOLUTION a where a.ID not in ( select
 drop table TMP;
 
 //another way
-delete n1 FROM user_verification_file n1, user_verification_file n2 WHERE n1.verification_file > n2.verification_file AND n1.user_id = n2.user_id;
+delete n1 FROM user_verification_file n1, user_verification_file n2 WHERE n1.verification_file > n2.verification_file AND n1.user_id = n2id;
