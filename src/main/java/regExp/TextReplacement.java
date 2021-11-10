@@ -11,12 +11,12 @@ public class TextReplacement {
 
     private static String regexp;
 
-    public static void main3(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         changePlaces("assertThat(", ").isEqualTo(", ");");
     }
 
-    public static void main(String[] args) {
-        System.out.println(replaceInLine("                assertThat(10).isEqualTo(scheduledDateTime.getHour());", "assertThat(", ").isEqualTo(", ");"));
+    public static void main2(String[] args) {
+        System.out.println(replaceInLine("assertThat(10).isEqualTo(scheduledDateTime.getHour());", "assertThat(", ").isEqualTo(", ");"));
     }
 
     private static void changePlaces(final String... regexpParts) throws IOException {
