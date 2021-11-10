@@ -7,6 +7,7 @@ public class Raplacement {
 
     public static void main (String[] args) {
         String text = "22-2222-22-12 suujghdskjfh sdkj  23-4566-87\n hjg uit tuyg jyuff jy22-555555-22-8 ujhguhh 89-5678-89";
+        System.out.println("First: " + text);
         String regexp = "(\\d{2})-(\\d{4})-(\\d{2})";
         // "\\D"; // Нецифровой символ
         // String regexp = "\\d";// Цифровой символ
@@ -15,7 +16,7 @@ public class Raplacement {
         // String regexp = "\\s"; // Пробельный символ
         // String regexp = "\\S"; // НЕ gробельный символ
         // String regexp = "^1"; //Начало текста
-        System.out.println(text.replaceAll(regexp, "$1/$2/$3"));
+        System.out.println("Second: " + text.replaceAll(regexp, "$1/$2/$3"));
 
         Pattern p = Pattern.compile(regexp);
         Matcher m = p.matcher(text);
