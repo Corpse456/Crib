@@ -14,6 +14,7 @@
 #
 /bin/*
 /target/*
+**/target/*
 /.settings/*
 
 # Log file
